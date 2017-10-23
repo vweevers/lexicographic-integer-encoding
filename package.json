@@ -1,0 +1,31 @@
+{
+  "name": "lexicographic-integer-encoding",
+  "version": "0.0.1",
+  "description": "Lexicographically ordered integers for level(up)",
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "lexicographic-integer": "~1.1.0",
+    "safe-buffer": "~5.1.1"
+  },
+  "devDependencies": {
+    "standard": "~10.0.3",
+    "tape": "~4.8.0"
+  },
+  "keywords": [
+    "encoding",
+    "level",
+    "levelup",
+    "lexicographic"
+  ],
+  "engines": {
+    "node": ">=4",
+    "npm": ">=2.0.0"
+  },
+  "repository": "vweevers/lexicographic-integer-encoding",
+  "bugs": "https://github.com/vweevers/lexicographic-integer-encoding/issues",
+  "homepage": "https://github.com/vweevers/lexicographic-integer-encoding"
+}
