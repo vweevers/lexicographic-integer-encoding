@@ -1,6 +1,6 @@
 {
   "name": "lexicographic-integer-encoding",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Lexicographically ordered integers for level(up)",
   "license": "MIT",
   "author": "Vincent Weevers",
