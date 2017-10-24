@@ -34,12 +34,14 @@ const db = levelup(encode(leveldown('./db'), { keyEncoding: lexint }))
 
 ## api
 
-### `require('lexicographic-integer-encoding')(encoding, [options])`
+### `lexint = require('lexicographic-integer-encoding')(encoding, [options])`
 
 - `encoding` (string, required): `'hex'` or `'buffer'`
 - `options.strict` (boolean): opt-in to type-checking input. If true, encode will throw:
   - A `TypeError` if input is not a number or if `NaN`
   - A `RangeError` if input is < 0 or > `Number.MAX_SAFE_INTEGER`
+
+Returns a [`level-codec` compliant encoding](https://github.com/Level/codec#encoding-format) object.
 
 ## see also
 
