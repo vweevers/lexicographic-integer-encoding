@@ -41,6 +41,12 @@ const db = levelup(encode(leveldown('./db'), { keyEncoding: lexint }))
   - A `TypeError` if input is not a number or if `NaN`
   - A `RangeError` if input is < 0 or > `Number.MAX_SAFE_INTEGER`
 
+## see also
+
+- [`lexicographic-integer`]: main encoding logic
+- [`unique-lexicographic-integer`]: `lexicographic-integer` plus a suffix if input is the same as the last call;
+- [`monotonic-lexicographic-timestamp`]: `unique-lexicographic-integer` with `Date.now()` to get a monotonically increasing timestamp with lexicographic order.
+
 ## install
 
 With [npm](https://npmjs.org) do:
@@ -56,3 +62,5 @@ npm install lexicographic-integer-encoding
 [`lexicographic-integer`]: https://github.com/substack/lexicographic-integer
 [`level`]: https://github.com/Level/level
 [`levelup`]: https://github.com/Level/levelup
+[`unique-lexicographic-integer`]: https://github.com/vweevers/unique-lexicographic-integer
+[`monotonic-lexicographic-timestamp`]: https://github.com/vweevers/monotonic-lexicographic-timestamp
